@@ -15,7 +15,6 @@
   text-align: center;
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
   max-width: 600px; /* Adjust max-width as per your design */
   margin: auto;
 }
@@ -31,6 +30,7 @@
 
 .image-container img {
   max-width: 100%; /* Ensure the image takes the full width of its container */
+  width: 150%; /* Increase the width of the image */
   height: auto; /* Maintain aspect ratio */
 }
 

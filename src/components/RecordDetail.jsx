@@ -1,8 +1,8 @@
+// RecordDetail.jsx
 /* eslint-disable react/prop-types */
-// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import "./RecordDetail.css"; // Import CSS file for RecordDetail
+import "./RecordDetail.css";
 
 const RecordDetail = ({ records, setRecords }) => {
   const { id } = useParams();
@@ -35,72 +35,90 @@ const RecordDetail = ({ records, setRecords }) => {
     <div className="record-detail">
       <h2>Record Detail</h2>
       <form>
-        <label htmlFor="artist">Artist:</label>
-        <input
-          type="text"
-          id="artist"
-          name="artist"
-          value={record.artist}
-          readOnly
-        />
+        <div className="form-group">
+          <label htmlFor="artist">Artist:</label>
+          <input
+            type="text"
+            id="artist"
+            name="artist"
+            value={record.artist}
+            readOnly
+          />
+        </div>
 
-        <label htmlFor="album">Album:</label>
-        <input
-          type="text"
-          id="album"
-          name="album"
-          value={record.album}
-          readOnly
-        />
+        <div className="form-group">
+          <label htmlFor="album">Album:</label>
+          <input
+            type="text"
+            id="album"
+            name="album"
+            value={record.album}
+            readOnly
+          />
+        </div>
 
-        <label htmlFor="label">Label:</label>
-        <input
-          type="text"
-          id="label"
-          name="label"
-          value={record.label}
-          readOnly
-        />
+        <div className="form-group">
+          <label htmlFor="label">Label:</label>
+          <input
+            type="text"
+            id="label"
+            name="label"
+            value={record.label}
+            readOnly
+          />
+        </div>
 
-        <label htmlFor="releaseDate">Released Date:</label>
-        <input
-          type="text"
-          id="releaseDate"
-          name="releaseDate"
-          value={record.releaseDate}
-          readOnly
-        />
+        <div className="form-group">
+          <label htmlFor="releaseDate">Released Date:</label>
+          <input
+            type="text"
+            id="releaseDate"
+            name="releaseDate"
+            value={record.releaseDate}
+            readOnly
+          />
+        </div>
 
-        <label htmlFor="recordNumber">Record Number:</label>
-        <input
-          type="number"
-          id="recordNumber"
-          name="recordNumber"
-          value={record.recordNumber}
-          readOnly
-        />
+        <div className="form-group">
+          <label htmlFor="recordNumber">Record Number:</label>
+          <input
+            type="number"
+            id="recordNumber"
+            name="recordNumber"
+            value={record.recordNumber}
+            readOnly
+          />
+        </div>
 
-        <label htmlFor="recordState">State of the Records:</label>
-        <input
-          type="text"
-          id="recordState"
-          name="recordState"
-          value={record.recordState}
-          readOnly
-        />
+        <div className="form-group">
+          <label htmlFor="recordState">State of the Records:</label>
+          <input
+            type="text"
+            id="recordState"
+            name="recordState"
+            value={record.recordState}
+            readOnly
+          />
+        </div>
 
-        <label htmlFor="category">Category:</label>
-        <input
-          type="text"
-          id="category"
-          name="category"
-          value={record.category}
-          readOnly
-        />
+        <div className="form-group">
+          <label htmlFor="category">Category:</label>
+          <input
+            type="text"
+            id="category"
+            name="category"
+            value={record.category}
+            readOnly
+          />
+        </div>
 
         <div className="form-buttons">
-          <button type="button" onClick={handleSave}>Save</button>
-          <button type="button" onClick={handleDelete}>Delete</button>
+          <button type="button" className="save-button" onClick={handleSave}>
+            Save
+          </button>
+          <button type="button" className="delete-button" onClick={handleDelete}>
+            Delete
+          </button>
         </div>
       </form>
     </div>

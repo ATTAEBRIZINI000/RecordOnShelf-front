@@ -3,7 +3,7 @@
 import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import RecordDetail from "./RecordDetail";
-import "./Collection.css"; // Import CSS file for Collection
+import "./Collection.css"; 
 
 const Collection = ({ records, setRecords }) => {
   return (

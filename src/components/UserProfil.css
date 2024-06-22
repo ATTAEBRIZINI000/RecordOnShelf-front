@@ -1,0 +1,80 @@
+.user-profile {
+  max-width: 600px;
+  margin: 50px auto; /* Centering the form vertically with margin on top */
+  padding: 20px; /* Adding padding inside the form */
+  background-color: #503b31; /* Background color */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #ffffff; /* Text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+}
+
+.user-profile h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-profile form {
+  width: 100%; /* Ensure form takes full width */
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile form > div {
+  margin-bottom: 15px; /* Adding margin between form elements */
+}
+
+.user-profile label {
+  display: none; /* Hide labels since input names will be inside input boxes */
+}
+
+.user-profile input[type="text"],
+.user-profile input[type="number"],
+.user-profile select {
+  width: 100%; /* Set width to take full width of the form */
+  padding: 10px;
+  margin-bottom: 10px; /* Adjusted margin inside form elements */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #5e4c42; /* Updated input and select box color */
+  color: #ffffff; /* Text color */
+}
+
+.user-profile input[type="file"] {
+  border: none; /* Remove border for file input */
+}
+
+.user-profile img {
+  display: block;
+  margin-top: 10px;
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.user-profile button {
+  background-color: #cedfd9;
+  color: #503b31;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 20px; /* Space above button */
+  transition: background-color 0.3s ease;
+}
+
+.user-profile button:hover {
+  background-color: #a6c9e2;
+}
+
+@media (max-width: 600px) {
+  .user-profile input[type="text"],
+  .user-profile input[type="number"],
+  .user-profile select {
+    width: 100%; /* Set full width for inputs on smaller screens */
+  }
+}
